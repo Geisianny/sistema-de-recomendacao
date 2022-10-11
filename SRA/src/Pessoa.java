@@ -5,7 +5,7 @@ import java.util.ArrayList;
  *
  * @author VAIO
  */
-public class Pessoa {
+public class Pessoa implements Comparable<Pessoa>{
     
     private String nome;
     private int idade;
@@ -13,6 +13,8 @@ public class Pessoa {
     private String sexo;
     private ArrayList interesses = new ArrayList<String>(); //<hobby, genero, formacao>;
     private String time;
+
+    private int peso;
 
     public Pessoa() {
 
@@ -22,7 +24,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public Pessoa(String nome, int idade, String time, String sexo, String hobby, String generoFilme, String formação) {
+    public Pessoa(String nome, int idade, String sexo, String time, String hobby, String generoFilme, String formação) {
         this.nome = nome;
         this.idade = idade;
         this.time = time;
@@ -87,7 +89,25 @@ public class Pessoa {
         return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", Id=" + 
                 Id + ", sexo=" + sexo +  '}';
     }
-    
-    
+
+
+    @Override
+    public int compareTo(Pessoa p) {
+
+        if(this.getPeso() > p.getPeso())
+            return -1;
+        else if(this.peso == p.getPeso())
+            return 0;
+
+        return 1;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
 }
 

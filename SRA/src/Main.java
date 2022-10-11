@@ -11,20 +11,10 @@ import java.util.logging.Logger;
 public class Main {
 
     public static void main(String[] args) {
-        RepositorioPessoa repo = new RepositorioPessoa();
-        ArrayList<Pessoa> list = new ArrayList<>();
-        
-        try {
-            list = repo.listarPessoaTXT("C:\\Users\\VAIO\\OneDrive\\"
-            + "Documentos\\projetoAEDII\\Sistema-de-recomendacao-de-amizades"
-                    + "\\SRA\\src\\Banco_10.txt");
-            
-            for(Pessoa p: list){
-                System.out.println(p.toString());
-            }
-            /*conexão.conectBD();
-            ArrayList<Pessoa> list = conexão.listaVertice();
-            
+        Repositorio repositorio = new Repositorio();
+
+            ArrayList<Pessoa> list = repositorio.lista;
+
             Rede rede = new Rede(list.size());
             
             // Pessoa p1 = new Pessoa("rodrigo",17, "santos", "M", "musculação","romance","medio");
@@ -64,13 +54,18 @@ public class Main {
             BuscaLargura b = new BuscaLargura(rede);
             b.execute(list.get(0));
             b.imprimir();
-            
-            */
-        } catch (IOException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
-        }
 
-
+        System.out.println("\n");
+        System.out.println("0- "+rede.ponderar(list.get(0),list.get(0)));
+        System.out.println("1- "+rede.ponderar(list.get(0),list.get(1)));
+        System.out.println("2- "+rede.ponderar(list.get(0),list.get(2)));
+        System.out.println("3- "+rede.ponderar(list.get(0),list.get(3)));
+        System.out.println("4- "+rede.ponderar(list.get(0),list.get(4)));
+        System.out.println("5- "+rede.ponderar(list.get(0),list.get(5)));
+        System.out.println("6- "+rede.ponderar(list.get(0),list.get(6)));
+        System.out.println("7- "+rede.ponderar(list.get(0),list.get(7)));
+        System.out.println("8- "+rede.ponderar(list.get(0),list.get(8)));
+        System.out.println("9- "+rede.ponderar(list.get(0),list.get(9)));
     }
 
     

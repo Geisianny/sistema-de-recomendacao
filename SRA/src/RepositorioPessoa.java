@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.sql.*;
 import java.util.ArrayList;
 
-public class Conexão {
+public class RepositorioPessoa {
     PreparedStatement pstn;
     Connection c;
     ResultSet rs;

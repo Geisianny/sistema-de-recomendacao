@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
         RepositorioPessoa repo = new RepositorioPessoa();
         ArrayList<Pessoa> list = new ArrayList<>();
-        
+       
         try {
             list = repo.listarPessoaTXT("C:\\Users\\VAIO\\OneDrive\\"
             + "Documentos\\projetoAEDII\\Sistema-de-recomendacao-de-amizades"

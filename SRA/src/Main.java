@@ -1,8 +1,4 @@
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  *Classe responsável pela recomendação de pessoas
  * 
@@ -67,6 +63,4 @@ public class Main {
         System.out.println("8- "+rede.ponderar(list.get(0),list.get(8)));
         System.out.println("9- "+rede.ponderar(list.get(0),list.get(9)));
     }
-
-    
 }

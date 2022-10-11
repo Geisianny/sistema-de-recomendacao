@@ -1,7 +1,5 @@
 # Sistema-de-recomendacao-de--amizades-para-redes-sociais
 
-# Sistema-de-recomendacao-de-amizades-para-redes-sociais
-
 ## :octocat: Integrantes
 [Geisianny B.](https://github.com/Geisianny) | [Rodrigo Leandro](https://github.com/Rudrigozx) 
 ## :page_with_curl: Sobre o Projeto

@@ -81,5 +81,13 @@ public class Pessoa {
     public void setId(int id) {
         Id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", idade=" + idade + ", Id=" + 
+                Id + ", sexo=" + sexo +  '}';
+    }
+    
+    
 }
 

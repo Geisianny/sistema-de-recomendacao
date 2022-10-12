@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class View {
 
-    public void menu(Rede rede) {
+    public void menu(Rede rede, ArrayList<Pessoa> list) {
         
         Scanner scan = new Scanner(System.in);
         
@@ -46,11 +46,8 @@ public class View {
                     break;
                 
                 case 4:
+                    
                     System.out.println("");
-                    Repositorio repositorio = new Repositorio();
-                    repositorio.bancoCom25pessoas();
-        
-                    ArrayList<Pessoa> list = repositorio.lista;
                     
                     for (int i=0;i< list.size();i++){
                         System.out.println("Amigos de "+list.get(i).getNome()+
@@ -58,6 +55,7 @@ public class View {
                         System.out.println(rede.listarAmizades(list.get(i)));
                         System.out.println("\n");
                     }
+                    break;
                     
                 case 0: 
                     System.out.println("\nSaindo...");

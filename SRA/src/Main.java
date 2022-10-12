@@ -65,13 +65,14 @@ public class Main {
         rede.adicionarAresta(list.get(23),list.get(24));
 
 
-
+        
         Pessoa origem = list.get(0);
         View v = new View();
         v.Recomendar(origem,rede);
 
         rede.imprimir();
-
+        
+        v.menu(rede,list);
 
 
     

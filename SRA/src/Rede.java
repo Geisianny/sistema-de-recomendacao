@@ -107,7 +107,7 @@ public class Rede implements IRede{
 
     @Override
     public int ponderar(Pessoa p1, Pessoa p2) {
-       int k = 50;
+       int k = 100;
        double y = gerarPontuacao(p1,p2);
        double x = k * (1/y);
        return (int) Math.round(x);

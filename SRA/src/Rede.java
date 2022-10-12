@@ -1,6 +1,3 @@
-
-
-
 import java.util.*;
 import java.lang.Math;
 
@@ -97,7 +94,6 @@ public class Rede implements IRede{
     public void setNumeroVertices(int numeroVertices) {
         this.numeroVertices = numeroVertices;
     }
-
 
 
     public List<String> listarAmizades(Pessoa p) {

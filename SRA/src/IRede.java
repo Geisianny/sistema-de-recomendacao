@@ -30,5 +30,6 @@ public interface IRede {
     
     int ponderar(Pessoa p1, Pessoa p2);
     
+    
     double gerarPontuacao(Pessoa p1, Pessoa p2);
 }

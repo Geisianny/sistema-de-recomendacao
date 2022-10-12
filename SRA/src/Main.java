@@ -68,10 +68,6 @@ public class Main {
         
         Pessoa origem = list.get(0);
         View v = new View();
-        v.Recomendar(origem,rede);
-
-        rede.imprimir();
-        
         v.menu(rede,list);
 
 

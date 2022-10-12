@@ -42,7 +42,7 @@ public class View {
 
             }
         }
-
+//exibe as recomendações para uma detterminada pessoa
        public void Recomendar(Pessoa origem, Rede rede){
 
         BuscaLargura b = new BuscaLargura(rede);

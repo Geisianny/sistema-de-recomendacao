@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 
-/**Classe responsavel pela objetificação de pessoa para o sistema.
+/**Classe responsavel pela objetificação de pessoa(vertice) para o sistema.
  *
  * @author VAIO
  */

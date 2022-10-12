@@ -95,7 +95,7 @@ public class Rede implements IRede{
         this.numeroVertices = numeroVertices;
     }
 
-
+//lista as amizades(vertices vizinhos com 1 de distancia) de uma determinada pessoa(vertice)
     public List<String> listarAmizades(Pessoa p) {
         List<String> amigos = new ArrayList<String>(this.numeroVertices);
         for (int i = 0; i < this.numeroVertices; i++) {
@@ -104,7 +104,7 @@ public class Rede implements IRede{
         }
         return amigos;
     }
-
+// calcula o peso da aresta entre dois vertices
     @Override
     public int ponderar(Pessoa p1, Pessoa p2) {
        int k = 100;
@@ -113,7 +113,7 @@ public class Rede implements IRede{
        return (int) Math.round(x);
 
     }
-
+//compara os atributos de duas pessoas
     @Override
     public double gerarPontuacao(Pessoa p1, Pessoa p2) {
        double pontuar = 0.0;

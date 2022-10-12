@@ -48,7 +48,7 @@ public class Repositorio {
 
     }
     
-    public void bancoCom30pessoas(){
+    public void bancoCom25pessoas(){
         
         this.lista.add( new Pessoa ("Brenda Candido",54,"Masculino","Santos",
                 "Assistir Filmes/series","Terror","Humanas"));
@@ -102,16 +102,7 @@ public class Repositorio {
                 ,"Outras","Romance","Outras"));
         this.lista.add( new Pessoa ("Upton Correia",39,"Masculino","Santos",
                 "Assistir Filmes/series","Aventura","Humanas")); 
-        this.lista.add( new Pessoa ("Eleanor Braz",54,"Masculino","Santos",
-                "Assistir Filmes/series","Terror","Humanas"));
-        this.lista.add( new Pessoa ("Nicholas Messias",42,"Masculino","Sao Paulo"
-                ,"Ler livros","Cómedia","Exatas"));
-        this.lista.add( new Pessoa ("Sacha de Moura",33,"Feminino","Corinthians",
-                "Academia","Ação","Biologicas"));
-        this.lista.add( new Pessoa ("Aiko Aguiar",57,"Feminino","Palmeiras",
-                "Praticar esportes","Romance","Outras"));
-        this.lista.add( new Pessoa ("Sigourney Das Chagas",53,"Masculino",
-                "Flamengo","Jogar Games","Aventura","Humanas"));
+
             
            
            

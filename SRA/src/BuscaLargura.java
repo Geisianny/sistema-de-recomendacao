@@ -40,7 +40,7 @@ public class BuscaLargura {
         int peso;
 
         while (fila.size() > 0) {
-            System.out.println(fila);
+
             int v = fila.poll();
             List<Integer> adjacenciaV = r.listarAdjacencias(v);
             for (int u : adjacenciaV) {
@@ -81,6 +81,10 @@ public class BuscaLargura {
             System.out.print(p.getNome() + " - ");
         System.out.println("");
     }
+
+    /*Calcula o peso entre dois vertices de acordo a distancia entre eles e adiciona a lista de recomendações
+    se a distancia estiver entre 2 e 5.
+     */
     public int CalcularPeso(int i, int j){
        int peso;
 

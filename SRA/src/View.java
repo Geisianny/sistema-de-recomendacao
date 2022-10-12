@@ -48,7 +48,7 @@ public class View {
                 case 4:
                     System.out.println("");
                     Repositorio repositorio = new Repositorio();
-                    repositorio.bancoCom30pessoas();
+                    repositorio.bancoCom25pessoas();
         
                     ArrayList<Pessoa> list = repositorio.lista;
                     
